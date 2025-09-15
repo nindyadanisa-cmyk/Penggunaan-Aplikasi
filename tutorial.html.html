@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan Penggunaan Aplikasi</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fce7f3;
+        }
+        .text-pink-primary {
+            color: #d81b60;
+        }
+        .bg-pink-secondary {
+            background-color: #f8bbd0;
+        }
+        .btn-pink {
+            background-color: #d81b60;
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .btn-pink:hover {
+            background-color: #c2185b;
+        }
+        .card-pink {
+            background-color: #fce4ec;
+            border-left: 5px solid #d81b60;
+        }
+        .shadow-pink {
+            box-shadow: 0 10px 15px -3px rgba(216, 27, 96, 0.1), 0 4px 6px -2px rgba(216, 27, 96, 0.05);
+        }
+        .hidden-step {
+            display: none;
+        }
+    </style>
+</head>
+<body class="p-6">
+
+    <div class="container mx-auto max-w-4xl bg-white rounded-xl shadow-lg p-8 md:p-12 mt-10">
+
+        <div id="step-1">
+            <header class="text-center mb-10">
+                <h1 class="text-4xl font-bold text-pink-primary mb-2">Modul Penggunaan Aplikasi Pantau Tumbuh Kembang Anak</h1>
+                <p class="text-gray-600">Selamat datang! Mari kita pelajari bersama cara menggunakan aplikasi ini.</p>
+            </header>
+            <div class="flex justify-center mt-8">
+                <button onclick="showStep(2)" class="btn-pink px-8 py-3 rounded-full font-bold">Selanjutnya</button>
+            </div>
+        </div>
+
+        <div id="step-2" class="hidden-step">
+            <header class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-pink-primary mb-4">Tentang Aplikasi Ini</h2>
+            </header>
+            <section class="p-6 bg-pink-secondary rounded-lg shadow-inner mb-8">
+                <p class="text-gray-700 text-center leading-relaxed">
+                    Aplikasi ini adalah alat digital yang dirancang khusus untuk orang tua modern dalam memantau dan mendokumentasikan setiap tahapan penting **tumbuh kembang anak**. Dengan antarmuka yang ramah pengguna dan fitur-fitur yang terintegrasi, Anda dapat dengan mudah mencatat data, memvisualisasikan pertumbuhan, dan mendapatkan informasi edukasi yang relevan. Aplikasi ini bertujuan untuk memberikan kemudahan bagi Anda agar selalu terhubung dengan setiap progres si kecil.
+                </p>
+            </section>
+            <div class="flex justify-between">
+                <button onclick="showStep(1)" class="bg-gray-400 hover:bg-gray-500 text-white px-6 py-2 rounded-full font-bold">Kembali</button>
+                <button onclick="showStep(3)" class="btn-pink px-6 py-2 rounded-full font-bold">Selanjutnya</button>
+            </div>
+        </div>
+
+        <div id="step-3" class="hidden-step">
+            <h2 class="text-3xl font-bold text-pink-primary mb-6">Panduan Penggunaan</h2>
+            <p class="text-gray-600 mb-8">Berikut adalah panduan langkah demi langkah untuk menggunakan semua fitur yang ada secara lebih detail.</p>
+            
+            <div class="space-y-8">
+                <div class="card-pink p-6 rounded-lg shadow-pink">
+                    <h3 class="font-semibold text-xl text-gray-700 mb-2"><i class="fas fa-user-plus text-pink-primary mr-2"></i>1. Login & Registrasi</h3>
+                    <p class="text-gray-600 mb-2">Sebelum memulai, Anda perlu membuat akun atau masuk ke akun yang sudah ada. Ini penting agar semua data tumbuh kembang anak Anda tersimpan dengan aman dan hanya bisa diakses oleh Anda.</p>
+                    <ul class="list-disc list-inside text-gray-600 ml-4">
+                        <li>**Registrasi Akun Baru:** Jika Anda pengguna baru, klik tombol **"Register"** pada halaman awal. Masukkan alamat email aktif dan buat password yang kuat.</li>
+                        <li>**Login:** Jika Anda sudah terdaftar, cukup masukkan email dan password Anda di kolom yang tersedia, lalu klik tombol **"Login"**.</li>
+                    </ul>
+                </div>
+
+                <div class="card-pink p-6 rounded-lg shadow-pink">
+                    <h3 class="font-semibold text-xl text-gray-700 mb-2"><i class="fas fa-baby text-pink-primary mr-2"></i>2. Mengelola Data Anak</h3>
+                    <p class="text-gray-600 mb-2">Setelah login, Anda akan masuk ke dashboard. Di sinilah Anda dapat mengelola data si kecil.</p>
+                    <ul class="list-disc list-inside text-gray-600 ml-4">
+                        <li>**Menambah Data Anak:** Klik tombol **"Tambah Anak"**. Isi formulir dengan data dasar anak seperti nama, tanggal lahir, dan jenis kelamin. Ini akan menjadi profil utama anak Anda.</li>
+                        <li>**Memasukkan Data Pengukuran:** Pada profil anak, Anda bisa mencatat data pengukuran seperti berat badan dan tinggi badan. Masukkan data ini secara rutin agar grafik pertumbuhan lebih akurat.</li>
+                        <li>**Memilih Anak:** Jika Anda memiliki lebih dari satu anak, gunakan menu di samping (sidebar) untuk memilih anak mana yang ingin Anda pantau datanya. Tampilan dashboard akan otomatis berubah sesuai data anak yang Anda pilih.</li>
+                    </ul>
+                </div>
+                
+                <div class="card-pink p-6 rounded-lg shadow-pink">
+                    <h3 class="font-semibold text-xl text-gray-700 mb-2"><i class="fas fa-chart-line text-pink-primary mr-2"></i>3. Memantau Tumbuh Kembang</h3>
+                    <p class="text-gray-600 mb-2">Aplikasi ini menyediakan visualisasi data untuk membantu Anda memahami pertumbuhan anak.</p>
+                    <ul class="list-disc list-inside text-gray-600 ml-4">
+                        <li>**Grafik Pertumbuhan:** Perhatikan grafik **BB/U** (Berat Badan menurut Usia) dan **TB/U** (Tinggi Badan menurut Usia). Grafik ini membandingkan data anak Anda dengan standar pertumbuhan WHO, memberikan gambaran apakah pertumbuhan anak sudah ideal atau perlu perhatian lebih.</li>
+                        <li>**Pencapaian (Milestone):** Di tab **"Pencapaian"**, Anda bisa melihat daftar perkembangan penting anak seperti kemampuan duduk, merangkak, atau berjalan. Tandai pencapaian yang sudah dikuasai anak Anda untuk melacak kemajuannya.</li>
+                    </ul>
+                </div>
+
+                <div class="card-pink p-6 rounded-lg shadow-pink">
+                    <h3 class="font-semibold text-xl text-gray-700 mb-2"><i class="fas fa-robot text-pink-primary mr-2"></i>4. Bertanya dengan Chatbot</h3>
+                    <p class="text-gray-600 mb-2">Jika Anda memiliki pertanyaan seputar tumbuh kembang anak, chatbot kami siap membantu.</p>
+                    <ul class="list-disc list-inside text-gray-600 ml-4">
+                        <li>**Mengakses Chatbot:** Klik **ikon robot** di pojok kanan bawah layar. Jendela chat akan muncul.</li>
+                        <li>**Cara Bertanya:** Ketik pertanyaan Anda di kolom pesan. Chatbot akan memberikan jawaban otomatis berdasarkan kata kunci. Saat ini, bot dapat menjawab pertanyaan seputar gizi, perkembangan anak, dan imunisasi.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="flex justify-between mt-10">
+                <button onclick="showStep(2)" class="bg-gray-400 hover:bg-gray-500 text-white px-6 py-2 rounded-full font-bold">Kembali</button>
+                <button onclick="showStep(4)" class="btn-pink px-6 py-2 rounded-full font-bold">Selesai</button>
+            </div>
+        </div>
+
+        <div id="step-4" class="hidden-step">
+            <header class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-pink-primary mb-4">Langkah Pertama yang Hebat!</h2>
+            </header>
+            <div class="p-6 bg-pink-secondary rounded-lg shadow-inner mb-8 text-center">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Selamat! Anda telah memahami cara menggunakan aplikasi ini.
+                    Setiap langkah kecil yang Anda ambil hari ini adalah investasi besar untuk masa depan si kecil.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Teruslah memantau tumbuh kembangnya, karena kesehatan mereka adalah kebahagiaan Anda.
+                </p>
+            </div>
+            <div class="flex justify-center mt-10">
+                </div>
+        </div>
+    </div>
+    
+    <script>
+        function showStep(stepNumber) {
+            // Sembunyikan semua step
+            document.getElementById('step-1').classList.add('hidden-step');
+            document.getElementById('step-2').classList.add('hidden-step');
+            document.getElementById('step-3').classList.add('hidden-step');
+            document.getElementById('step-4').classList.add('hidden-step'); // Tambahkan step baru
+
+            // Tampilkan step yang dipilih
+            document.getElementById('step-' + stepNumber).classList.remove('hidden-step');
+        }
+    </script>
+</body>
+</html>
